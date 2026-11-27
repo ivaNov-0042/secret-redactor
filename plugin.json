@@ -1,0 +1,5 @@
+{
+  "name": "secret-redactor",
+  "version": "1.0.0",
+  "description": "Automatically detects and redacts API keys, tokens, and secrets in prompts and tool calls."
+}

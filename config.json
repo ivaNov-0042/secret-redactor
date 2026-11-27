@@ -1,0 +1,38 @@
+{
+  "uniqueRedaction": true,
+  "restorePlaceholders": true,
+  "sensitiveFileMode": "redact",
+  "scanJsonFiles": true,
+  "disabledLabels": [],
+  "customPatterns": [
+    {
+      "label": "ACCOUNT_NUMBER",
+      "pattern": "(?<![0-9A-Za-z_])\\d{8}(?![0-9A-Za-z_])"
+    }
+  ],
+  "maskEnvCommands": true,
+  "maskAllEnvValues": true,
+  "safeEnvVars": [],
+  "sensitiveFiles": [
+    ".env",
+    ".env.*",
+    "*.env",
+    ".npmrc",
+    ".pypirc",
+    ".netrc",
+    "id_rsa",
+    "id_ed25519",
+    "id_ecdsa",
+    "credentials.json",
+    "*.pem",
+    "*.key",
+    "*.p12",
+    "*.pfx"
+  ],
+  "safeEnvSuffixes": [
+    ".example",
+    ".sample",
+    ".template",
+    ".dist"
+  ]
+}
